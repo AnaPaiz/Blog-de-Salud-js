@@ -1,3 +1,4 @@
+import { responsiveDesign } from "../scriptForm.js";
 import { top } from "./top.js";
 //Principal container - top left
 
@@ -13,18 +14,21 @@ export class TopInfo {
     const info = top.map(
       (data) => new TopInfo(data.title, data.img, data.description, data.link)
     );
-    var container = document.querySelector(".info__top");
+    var container = document.querySelector(".top");
     for (let i = 0; i < info.length; i++) {
       var topContainer = document.createElement("div");
-      topContainer.classList.add("info__top-card");
+      topContainer.classList.add("top-card");
       topContainer.innerHTML = `
-    <img src="${info[i].img}" id="info__top-img"/>
-    <h3 id="info__top-title">${info[i].title}</h3>  
-    <p id="info__top-des">${info[i].desc}</p>
-    <a href="${info[i].link}" target="_blank" id="info__top-link">Leer más</a>
+    <img src="${info[i].img}""/>
+    <h4>${info[i].title}</h4>  
+    <p>${info[i].desc}</p>
+    <a href="${info[i].link}" target="_blank">Leer más</a>
     `;
       container.append(topContainer);
     }
-    container.style.height = `calc(100vh * ${info.length})`;
   };
 }
+
+const UI = new responsiveDesign();
+UI.funtionBar();
+UI.clickOptions();
