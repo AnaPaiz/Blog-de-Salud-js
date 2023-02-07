@@ -3,7 +3,7 @@ export const top =[
     {
         title:"Trastorno de alimentación restrictivo o selectivo",
         img: "https://lamenteesmaravillosa.com/wp-content/uploads/2016/10/ninosinapetito-p.jpg",
-        description: "Los niños con un trastorno de alimentación restrictivo o selectivo comen con muchas manías y les interesa muy poco comer alimentos. Comen una variedad muy limitada de alimentos preferidos, lo que les puede llevar a un escaso crecimiento y a un escaso nivel nutricional. ",
+        description: "Los niños con un trastorno de alimentación restrictivo o selectivo comen con muchas manías y les interesa muy poco comer alimentos. Comen una variedad muy limitada de alimentos preferidos, lo que les puede llevar a un escaso crecimiento y a un escaso nivel nutricional.",
         link: "https://kidshealth.org/es/parents/arfid.html",
 
     }, {
@@ -19,4 +19,3 @@ export const top =[
         link: "https://www.mayoclinic.org/es-es/diseases-conditions/eating-disorders/symptoms-causes/syc-20353603",
     }
 ];
-
